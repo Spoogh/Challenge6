@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="assets/css/style.css"  re;="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+
+
+ 
+    <header class="header-height center-aligned">
+        <h1 class="header-text">Check Out The Weather!</h1>
+        
+
+    </header>
+
+    <main class="row .no-margin">
+        <div class="container col-12 col-lg-3">
+            <!-- submit form -->
+             <form id="inputCity">
+                <label for="city" class="label-text">
+                    <h2>Search for a City:</h2>
+                </label> 
+                <br>
+                <!-- submit button -->
+                <div class="input-submit">
+                    <input  type="text" id="searched-city"  class="submit">
+                    <input id="city-submit" type="submit" class="btn btn-primary">
+                </div>  
+                <!-- delete button -->
+                <button id="delete-storage" type="submit" class="btn btn-danger delete-previous">Delete All Items On Page</button>
+            </form>
+            <!-- list for previous searches -->
+            <h2>View past cities weather. <br>Click Below:</h2>
+                <!-- container for all previous li -->
+                <ul id="cityHistory"></ul>
+        </div>
+        <!-- weather container -->
+        <div class="container col-12 col-lg-9">
+            <div id="current-weather" class="padding-bottom"></div>
+            <div id="fiveday"></div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+<script src = "assets/script.js"></script>
+</body>
+</html>
